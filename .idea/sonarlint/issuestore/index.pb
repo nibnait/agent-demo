@@ -1,10 +1,6 @@
 
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-m
-=src/main/java/cc/tianbin/demo/agent/MyMonitorTransformer.java,5/7/57675e0552f16fe2e763b6d408d84454c72e4449
-g
-7src/main/java/cc/tianbin/demo/agent/MethodCostTime.java,1/e/1e337b87614f067ccb917a64d9669b3590b66178
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 n
@@ -13,3 +9,21 @@ k
 ;src/main/java/cc/tianbin/demo/agent/track/TrackContext.java,4/4/44a73a8240b7b97d33dcdb7110cc85d9e77641e7
 c
 3src/main/java/cc/tianbin/demo/agent/track/Span.java,6/f/6f3cc7c1b9b6bc91019562d028ec33a3ca7f2f98
+m
+=src/main/java/cc/tianbin/demo/agent/plugin/jvm/JvmPlugin.java,c/4/c46e4aa6490521714edfeb1005d944cf01900624
+l
+<src/main/java/cc/tianbin/demo/agent/plugin/jvm/JvmStack.java,c/9/c92d7ecc2091535b35b65671ae7176a83831c51a
+m
+=src/main/java/cc/tianbin/demo/agent/plugin/jvm/JvmAdvice.java,3/7/37aa35260f490ec5d534c6e3f5a1ca8746a9d206
+o
+?src/main/java/cc/tianbin/demo/agent/plugin/link/LinkPlugin.java,f/1/f1c55d94983b5766071728218ec5dc7d43a0b121
+o
+?src/main/java/cc/tianbin/demo/agent/plugin/link/LinkAdvice.java,8/2/82ce58738e54ed7e2c222b3a12cf881e3354c2f4
+g
+7src/main/java/cc/tianbin/demo/agent/plugin/IPlugin.java,c/4/c4892214d079355012f4b08fae82d5c216505137
+m
+=src/main/java/cc/tianbin/demo/agent/plugin/PluginFactory.java,e/d/ed3660dd4d168cfbc001d86ceddddef0682524eb
+k
+;src/main/java/cc/tianbin/demo/agent/track/TrackManager.java,3/7/37fd52f3ecb9a84aebf130a890014525398fa6a3
+`
+0src/main/java/cc/tianbin/demo/agent/MyAgent.java,8/5/8526e62c52afff49571ec0e66010b4de8ae88c99
