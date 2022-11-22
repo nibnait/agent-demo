@@ -9,6 +9,8 @@ import net.bytebuddy.matcher.ElementMatchers;
 import net.bytebuddy.utility.JavaModule;
 
 import java.lang.instrument.Instrumentation;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by nibnait on 2022/11/22
@@ -16,9 +18,21 @@ import java.lang.instrument.Instrumentation;
 @Slf4j
 public class MyAgent {
 
+    public static void premain(String agentArgs, Instrumentation inst) {
+        log.info("this is my agent：" + agentArgs);
+
+        Executors.newScheduledThreadPool(1)
+                .scheduleAtFixedRate(new Runnable() {
+                    public void run() {
+                        JvmStack.printMemoryInfo();
+                        JvmStack.printGCInfo();
+                        log.info("===================================================================================================");
+                    }
+                }, 0, 5000, TimeUnit.MILLISECONDS);
+    }
 
     //JVM 首先尝试在代理类上调用以下方法
-    public static void premain(String agentArgs, Instrumentation inst) {
+    public static void premain1(String agentArgs, Instrumentation inst) {
         log.info("this is my agent：" + agentArgs);
 
         AgentBuilder.Transformer transformer = (builder, typeDescription, classLoader, javaModule) -> {
