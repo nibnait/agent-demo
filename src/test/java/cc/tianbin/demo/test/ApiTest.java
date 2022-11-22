@@ -14,13 +14,14 @@ public class ApiTest {
      * VM options:
      * -javaagent:/Users/nibnait/github/agent-demo/target/agent-demo-1.0-SNAPSHOT.jar=testargs
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ApiTest apiTest = new ApiTest();
         apiTest.echoHi();
     }
 
-    private void echoHi(){
+    private void echoHi() throws InterruptedException {
         log.info("hi agent");
+        Thread.sleep((long) (Math.random() * 500));
     }
 
 }

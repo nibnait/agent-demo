@@ -36,6 +36,17 @@
             <type>jar</type>
         </dependency>
 
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy</artifactId>
+            <version>1.8.20</version>
+        </dependency>
+        <dependency>
+            <groupId>net.bytebuddy</groupId>
+            <artifactId>byte-buddy-agent</artifactId>
+            <version>1.8.20</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -76,6 +87,8 @@
                     <artifactSet>
                         <includes>
                             <include>javassist:javassist:jar:</include>
+                            <include>net.bytebuddy:byte-buddy:jar:</include>
+                            <include>net.bytebuddy:byte-buddy-agent:jar:</include>
                         </includes>
                     </artifactSet>
                 </configuration>
